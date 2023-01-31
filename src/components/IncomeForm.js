@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+//useRef는 함수 안에서 실행되어도 state와 달리 재실행되지않는다
+//렌더를 따로 해주지않으면 변화된 값이 표시 되지않음
 
 function IncomeForm({ income, setIncome }) {
   const desc = useRef(null);
@@ -9,7 +11,7 @@ function IncomeForm({ income, setIncome }) {
 
   const AddIncome = (evt) => {
     evt.preventDefault();
-
+    //입력받은 날짜를 분할
     let d = date.current.value.split("-");
     let newD = new Date(d[0], d[1], d[2]);
 
@@ -21,6 +23,8 @@ function IncomeForm({ income, setIncome }) {
         date: newD.getTime(),
       },
     ]);
+  
+    //input값을 초기화 하는코드
     desc.current.value = "";
     price.current.value = null;
     date.current.value = null;

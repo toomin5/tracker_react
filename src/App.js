@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <Header totalIncome={totalIncome} />
       <IncomeForm income={income} setIncome={setIncome} />
+      
     </div>
   );
 }
