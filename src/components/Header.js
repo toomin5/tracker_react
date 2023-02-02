@@ -1,12 +1,14 @@
 import React from "react";
 
 function Header({ totalIncome }) {
-  //totalIncome을 props로 받아온다
+  //App.js -> props를 받아온다
   return (
-    <header>
-      <h1>Income Trakcer</h1>
-      <div className="total-income">{totalIncome}</div>
-    </header>
+    <div>
+      <header>
+        <h1>Income Tracker</h1>
+        <div className="total-income">{totalIncome}원</div>
+      </header>
+    </div>
   );
 }
 
