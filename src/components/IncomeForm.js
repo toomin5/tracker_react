@@ -13,7 +13,7 @@ function IncomeForm({ income, setIncome }) {
 
     //설정한 날짜를 부여하기
     let d = date.current.value.split("-"); //['2023', '02', '08']임의로 설정한 값이 나온다
-    let newD = new Date(d[0], d[1], d[2]); //d는 3길이의 배열로 되어있기에 하나씩 뽑아온다.
+    let newD = new Date(d[0], d[1] - 1, d[2]); //d는 3길이의 배열로 되어있기에 하나씩 뽑아온다.
 
     //setIncome배열에 {[]} 이전 값들이 저장된다.
     //date는 초단위로 저장됨
