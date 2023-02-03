@@ -1,28 +1,21 @@
-:root {
-  --light: #f8f8f8;
-  --dark: #313131;
-  --grey: #888;
-  --primary: #ffce00;
-  --secondary: #fe4880;
-  --alert: #ff1e2d;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: montserrat, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: lightgrey;
 }
 
 input,
 button {
+  /*input,btn 테두리 색 제거*/
   border: none;
   outline: none;
   background: none;
-}
-
-body {
-  background-color: var(--light);
 }
 
 .App {
@@ -36,31 +29,33 @@ header {
 }
 
 h1 {
-  color: var(--grey);
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: left;
 }
 
 .total-income {
-  color: var(--grey);
-  font-size: 28px;
-  font-weight: 900;
-  background-color: #dfdfdf;
-  padding: 5px 25px;
-  border-radius: 8px;
+  /*총 금액 */
+  color: black;
+  font-size: 20px;
+  font-weight: 1000;
+  background-color: bisque;
+  padding: 5px 25px; /*상하 좌우*/
+  border-radius: 10px; /*모서리 둥글게*/
 }
 
 .income-form {
   display: block;
   margin: 15px;
-  position: relative;
+  position: relative; /*자신이 기준점이됨*/
 }
 
 .income-form:after {
+  /*가상요소 b = 앞쪽에 , a = 끝날때*/
   content: "";
-  position: absolute;
+  position: absolute; /*자식요소 부모를 기준점*/
   top: 0px;
+  left: 0px;
   left: 0px;
   right: 0px;
   bottom: 0px;
@@ -76,6 +71,7 @@ h1 {
   right: -3px;
   bottom: -3px;
 }
+
 .form-inner {
   position: relative;
   z-index: 1;
@@ -115,12 +111,12 @@ h1 {
   font-weight: 600;
   text-transform: uppercase;
 
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .form-inner input[type="submit"]:hover {
   background-position: 100%;
-  color: #fff;
+  color: green;
 }
 
 .income-list {
@@ -133,7 +129,7 @@ h1 {
   background-color: #fff;
   border-radius: 8px;
   margin-bottom: 15px;
-  display: flex;
+  display: flex; /*list안 텍스트 가로로*/
   transition: 0.4s;
   padding-left: 75px;
 }
@@ -148,9 +144,9 @@ h1 {
 
   cursor: pointer;
   display: block;
-  color: var(--light);
+  color: blue;
   font-weight: 600;
-  background-color: var(--alert);
+  background-color: aliceblue;
   border-radius: 8px 0px 0px 8px;
   transition: 0.2s;
 }

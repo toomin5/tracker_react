@@ -5,7 +5,7 @@ function Header({ totalIncome }) {
   return (
     <div>
       <header>
-        <h1>Income Tracker</h1>
+        <h1>미니 가계부</h1>
         <div className="total-income">{totalIncome}원</div>
       </header>
     </div>
