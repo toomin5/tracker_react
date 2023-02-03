@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/toomin5/tracker_react/static/css/main.a81017c0.css",
-    "main.js": "/toomin5/tracker_react/static/js/main.09bebc8a.js",
-    "index.html": "/toomin5/tracker_react/index.html",
-    "main.a81017c0.css.map": "/toomin5/tracker_react/static/css/main.a81017c0.css.map",
-    "main.09bebc8a.js.map": "/toomin5/tracker_react/static/js/main.09bebc8a.js.map"
+    "main.css": "/tracker_react/static/css/main.a81017c0.css",
+    "main.js": "/tracker_react/static/js/main.09bebc8a.js",
+    "index.html": "/tracker_react/index.html",
+    "main.a81017c0.css.map": "/tracker_react/static/css/main.a81017c0.css.map",
+    "main.09bebc8a.js.map": "/tracker_react/static/js/main.09bebc8a.js.map"
   },
   "entrypoints": [
     "static/css/main.a81017c0.css",
