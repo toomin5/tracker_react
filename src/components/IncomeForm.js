@@ -39,14 +39,14 @@ function IncomeForm({ income, setIncome }) {
           type="text"
           name="desc"
           id="desc"
-          placeholder="Income Des"
+          placeholder="메모"
           ref={desc}
         />
         <input
           type="number"
           name="price"
           id="price"
-          placeholder="price"
+          placeholder="금액"
           ref={price}
         />
         <input type="date" name="date" id="date" ref={date} />

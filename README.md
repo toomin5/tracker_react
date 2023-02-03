@@ -2,15 +2,18 @@
 
 ---
 
-App.js에서 수입과,총수입을 useState로 설정한다.<br>
+### 주소 = https://toomin5.github.io/tracker_react/
+
+App.js 에서 수입과,총수입을 useState로 설정한다.<br>
 
     //수입, 정한 수입 배열
     const [income, setIncome] = useState([]);
     //총수입
     const [totalIncome, setTotalIncome] = useState(0);
 
-IncomeForm.js 로 income,setIncome을 props로 보낸다<br>'
+IncomeForm.js 로 income,setIncome 을 props로 보낸다<br>'
 input태그 3개(설명,금액,날짜)를 만들고 useRef로 null값을 넣어주고 useRef의 초기값은 current.value로 찾을수있다.<br>
+useRef로 설정한 값은 해당 값이 변경이되어도 페이지에 렌더가 일어나지 않으면 표시가 되지않는다.
 
     function IncomeForm({ income, setIncome }) {
       const desc = useRef(null); //설명, 수입, 날짜
@@ -37,4 +40,4 @@ input태그 3개(설명,금액,날짜)를 만들고 useRef로 null값을 넣어�
     price.current.value = null;
     date.current.value = null;
 
-setIncome배열에 {[]} 값들이 저장이되고 마지막에 input태그의 값을 초기화 시켜준다
+setIncome배열에 {[]} 값들이 저장이되고 input태그의 값을 초기화 시켜준다.
